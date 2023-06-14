@@ -2,30 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <title>Vite App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
     <link rel="stylesheet" href="style.css" />
-
-    <title>Frontend Mentor | Manage landing page</title>
   </head>
+
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"><img src="images/logo.svg" alt="Manage" /> </a>
+          <a href="#">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
           <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
@@ -49,43 +46,44 @@
             <ul aria-label="Primary" role="list" class="nav-list">
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Product</a></li>
-              <li><a href="#">About us</a></li>
+              <li><a href="#">About Us</a></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Community</a></li>
             </ul>
           </nav>
           <button class="button | display-sm-none display-md-inline-flex">
-            Get started
+            Get Started
           </button>
         </div>
       </div>
     </header>
+
     <main>
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div class="flow">
-              <h1 class="fw-primary-heading fw-bold">
+              <h1 class="fs-primary-heading fw-bold">
                 Bring everyone together to build better products.
               </h1>
               <p>
                 Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view.
               </p>
-
-              <button class="button">Get started</button>
+              <button class="button">Get Started</button>
             </div>
             <div>
-              <img src="images/illustration-intro.svg" />
+              <img src="images/illustration-intro.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
+
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div class="flow">
-              <h2 class="fw-secondary-heading fw-bold">
+              <h2 class="fs-secondary-heading fw-bold">
                 What’s different about Manage?
               </h2>
               <p>
@@ -95,7 +93,7 @@
               </p>
             </div>
             <div>
-              <ul class="numbered-items| flow" role="list">
+              <ul class="numbered-items | flow" role="list">
                 <li>
                   <div class="flow" style="--flow-spacer: 1em">
                     <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
@@ -135,75 +133,118 @@
           </div>
         </div>
       </section>
-      <section class="carousel padding-block-700">
-        <h2 class="fw-secondary-heading fw-bold">What they’ve said</h2>
-        <button class="button">Get started</button>
+
+      <section class="carousel | padding-block-700">
+        <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
+        <!-- Carousel here -->
+        <button class="button">Get Started</button>
       </section>
 
       <section class="cta | padding-block-900 bg-accent-400 text-neutral-100">
         <div class="container">
           <div class="even-columns vertical-align-center">
             <div>
-              <p class="fw-primary-heading fw-bold">
+              <p class="fs-primary-heading fw-bold">
                 Simplify how your team works today.
               </p>
             </div>
             <div class="justify-self-end-md">
-              <button class="button" data-type="inverted">Get started</button>
+              <button class="button" data-type="inverted">Get Started</button>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+    <footer
+      class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100"
+    >
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="images/logo.svg" /> </a>
-            <ul role="list" aria-label="social links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="pinterest" href="#"></a></li>
-              <li><a aria-label="instagram" href="#"></a></li>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
+            </a>
+
+            <ul class="social-list" role="list" aria-label="Social links">
+              <li>
+                <a aria-label="facebook" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="twitter" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="pinterest" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="instragram" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav">
               <ul
                 class="flow"
-                data-spacing="tight"
-                aria-label="footer"
+                style="--flow-spacer: 1em"
+                aria-label="Footer"
                 role="list"
               >
-                <li><a href="">Home</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Privacy Policy</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="">
               <input type="email" />
-              <button class="button">Go</button>
+              <button class="button" data-shadow="none">Go</button>
             </form>
-            <p>Go Copyright 2020.All Rights Reserved</p>
+            <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
       </div>
     </footer>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Madalina Mihaela</a>.
-    </div>
-    <script src="java.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
